@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sinhala MMLU Shared Task · ICTer 2026</title>
+  <meta name="description" content="Sinhala MMLU Shared Task at ICTer 2026: build compact open models (≤8B parameters) that answer Sinhala multiple-choice questions across Easy, Medium and Hard levels.">
+  <meta property="og:title" content="Sinhala MMLU Shared Task · ICTer 2026">
+  <meta property="og:description" content="Sinhala MMLU Shared Task at ICTer 2026: build compact open models (≤8B parameters) that answer Sinhala multiple-choice questions across Easy, Medium and Hard levels.">
+  <meta property="og:type" content="website">
+  <!-- <meta name="theme-color" content="#f7f7f4" media="(prefers-color-scheme: light)"> -->
+  <!-- <meta name="theme-color" content="#101216" media="(prefers-color-scheme: dark)"> -->
+  <meta name="theme-color" content="#f7f7f4">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%234f46e5'/><text x='32' y='44' font-size='32' text-anchor='middle' fill='white' font-family='sans-serif'>සි</text></svg>"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="home">
+<!-- <a class="skip" href="#main">Skip to content</a> -->
+<header id="site-header" class="topbar"></header>
+
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <!-- <p class="eyebrow">Shared task · ICTer 2026 · Colombo, Sri Lanka</p> -->
+        <h1>How much do compact models <em>really</em> understand <span class="si-big">සිංහල?</span></h1>
+        <p class="lead">Build open-weight systems of <span class="hl">8 billion parameters or fewer</span> that answer Sinhala multiple-choice questions across Easy, Medium and Hard levels.</p>
+        <div class="actions">
+          <a class="btn btn-primary" data-link="registration" href="#">Register your team <span class="arrow"></span></a>
+          <a class="btn btn-ghost" href="task.html">Explore the task</a>
+        </div>
+      </div>
+
+      <!-- <div class="attn-card reveal" aria-label="Illustration: attention between the tokens of a Sinhala question, and the model's answer probabilities">
+        <div class="attn-head"><span>query token: <b id="attn-focus" class="si">කුමක්ද</b></span><span>attention weights</span></div>
+        <div class="attn-stage">
+          <svg class="attn-svg" aria-hidden="true"></svg>
+          <div class="tokens">
+            <span class="tok si">ශ්‍රී</span><span class="tok si">ලංකා</span><span class="tok si tok-sub">##වේ</span><span class="tok si">පරිපාලන</span><span class="tok si">අග</span><span class="tok si tok-sub">##නුවර</span><span class="tok si">කුමක්ද</span><span class="tok">?</span>
+          </div>
+        </div>
+        <div class="probs">
+          <div class="probs-title">p(answer | question)</div>
+          <div class="prob" data-p="0.07"><span class="opt">A</span><span class="track"><span class="fill"></span><span class="lbl si">කොළඹ</span></span><span class="val">0.07</span></div>
+          <div class="prob win" data-p="0.81"><span class="opt">B</span><span class="track"><span class="fill"></span><span class="lbl si">ශ්‍රී ජයවර්ධනපුර කෝට්ටේ</span></span><span class="val">0.81</span></div>
+          <div class="prob" data-p="0.09"><span class="opt">C</span><span class="track"><span class="fill"></span><span class="lbl si">මහනුවර</span></span><span class="val">0.09</span></div>
+          <div class="prob" data-p="0.03"><span class="opt">D</span><span class="track"><span class="fill"></span><span class="lbl si">ගාල්ල</span></span><span class="val">0.03</span></div>
+        </div>
+        <div class="attn-foot">Illustrative example · hover or tap a token to see what it attends to</div>
+      </div>
+    </div> -->
+
+    <div class="countdown reveal">
+      <div class="cd-label"><span class="faint">Next Up:</span> <strong id="cd-title">-</strong></div>
+      <div class="cd-grid">
+        <div><span id="cd-d">00</span><small>days</small></div>
+        <div><span id="cd-h">00</span><small>hours</small></div>
+        <div><span id="cd-m">00</span><small>min</small></div>
+        <div><span id="cd-s">00</span><small>sec</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <!-- <div class="wrap">
+    <div class="stats">
+      <div class="stat reveal"><b>8B</b><span>max total inference parameters</span></div>
+      <div class="stat reveal"><b>3</b><span>difficulty levels</span></div>
+      <div class="stat reveal"><b>4</b><span>max members per team</span></div>
+      <div class="stat reveal"><b>3</b><span>submissions per day</span></div>
+    </div>
+  </div> -->
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-label">why this task?</div>
+    <div class="grid-3">
+      <article class="card reveal"><span class="tok card-tag">Low-resource</span><h3>Sinhala deserves real evaluation</h3>
+        <p>Most language models are measured almost entirely in English. 
+          This benchmark tests genuine knowledge and reasoning in native Sinhala, with no translation.
+        </p>
+      </article>
+      <article class="card reveal"><span class="tok card-tag">≤ 8B</span><h3>Small enough to run locally</h3><p>Every component at inference counts towards an 8B budget; models, retrievers, rerankers, embeddings. Efficient ideas win.</p></article>
+      <article class="card reveal"><span class="tok card-tag">Reproducible</span><h3>Open and verifiable</h3><p>Open-weight models only, no closed APIs or internet at test time. Every ranked result is reproduced.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split">
+    <div class="reveal">
+      <div class="sec-label">how it works</div>
+      <ol class="seq">
+        <li><b>Register</b> your team (1-4 members) with one corresponding member.</li>
+        <li><b>Develop</b> on the dev set with the public baseline.</li>
+        <li><b>Submit</b> test predictions on the Codabench leaderboard.</li>
+        <li><b>Share</b> your system & code to finalize your submission.</li>
+        <li><b>Present</b> your work at ICTer 2026.</li>
+      </ol>
+      <div class="actions"><a class="btn btn-ghost" href="submission.html">Submission details <span class="arrow">→</span></a></div>
+    </div>
+    <div class="reveal">
+      <div class="sec-label">coming up</div>
+      <ul id="mini-timeline" class="mini-tl"></ul>
+      <div class="actions"><a class="btn btn-ghost" href="dates.html">All dates <span class="arrow">→</span></a></div>
+      <div class="sec-label" style="margin-top:36px">announcements</div>
+      <ul id="news" class="news"></ul>
+      <div class="links-row">
+        <a class="chip" data-link="codabench" href="#">Codabench</a>
+        <a class="chip" href="leaderboard.html">Leaderboard</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-label">explore</div>
+    <div class="grid-4">
+      <a class="card reveal" href="rules.html"><span class="tok card-tag">01</span><h3>Rules</h3><p>Teams, the 8B limit, models, data and integrity.</p><span class="go">read →</span></a>
+      <a class="card reveal" href="evaluation.html"><span class="tok card-tag">02</span><h3>Evaluation</h3><p>Accuracy per difficulty, macro average, tie-breaks.</p><span class="go">read →</span></a>
+      <a class="card reveal" href="submission.html"><span class="tok card-tag">03</span><h3>Submission</h3><p>Predictions, code packages and deadlines.</p><span class="go">read →</span></a>
+      <a class="card reveal" href="faq.html"><span class="tok card-tag">04</span><h3>FAQ</h3><p>Quick answers to common questions.</p><span class="go">read →</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="site-footer" class="footer"></footer>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
