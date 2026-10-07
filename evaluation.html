@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evaluation · Sinhala MMLU Shared Task</title>
+  <meta name="description" content="Evaluation metrics, leaderboards and tie-breaks for the Sinhala MMLU Shared Task.">
+  <meta property="og:title" content="Evaluation · Sinhala MMLU Shared Task">
+  <meta property="og:description" content="Evaluation metrics, leaderboards and tie-breaks for the Sinhala MMLU Shared Task.">
+  <meta property="og:type" content="website">
+  <!-- <meta name="theme-color" content="#f7f7f4" media="(prefers-color-scheme: light)"> -->
+  <!-- <meta name="theme-color" content="#101216" media="(prefers-color-scheme: dark)"> -->
+  <meta name="theme-color" content="#f7f7f4">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%234f46e5'/><text x='32' y='44' font-size='32' text-anchor='middle' fill='white' font-family='sans-serif'>සි</text></svg>"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="evaluation">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header" class="topbar"></header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a><span>/</span><span>evaluation</span></div>
+    <h1>How We <em>Evaluate</em></h1>
+    <p class="lead">Accuracy at each difficulty level, and their macro average.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <div class="grid-4">
+      <div class="metric reveal"><span class="tag tag-easy">easy</span><b>Acc<sub>E</sub></b><small>accuracy on Easy</small></div>
+      <div class="metric reveal"><span class="tag tag-med">medium</span><b>Acc<sub>M</sub></b><small>accuracy on Medium</small></div>
+      <div class="metric reveal"><span class="tag tag-hard">hard</span><b>Acc<sub>H</sub></b><small>accuracy on Hard</small></div>
+      <div class="metric metric-main reveal"><span class="tag">primary</span><b>Macro</b><small class="mono">(E + M + H) / 3</small></div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap split">
+    <div class="prose reveal">
+      <h3>Leaderboards</h3>
+      <!-- <div class="split-bar" role="img" aria-label="Test set split: about 30 percent public leaderboard, 70 percent hidden final ranking">
+        <div class="pub">~30% public</div><div class="priv">~70% hidden · final ranking</div>
+      </div> -->
+      <ul>
+        <li><b>Codabench leaderboard</b> - live during the test phase, computed on the hidden test set.</li>
+        <li><b>Final ranking</b> - Determined based on the reproducibility of the submitted code.</li>
+        <li>Teams are ranked by <b>macro-average accuracy</b>. A baseline is shown for reference.</li>
+      </ul>
+    </div>
+    <div class="prose reveal">
+      <!-- <h3>Tie-breaks</h3>
+      <ol>
+        <li>Higher accuracy on <b class="t-hard">Hard</b> questions.</li>
+        <li><b>Earlier submission time</b> of the selected run on Codabench.</li>
+      </ol> -->
+      <h3>Verification</h3>
+      <p>After the test phase closes, organisers run each team's code on their own hardware. A run is <b>verified</b> when it reproduces the scores from Codabench. Only verified runs enter the final ranking.</p>
+    </div>
+  </div>
+  <div class="wrap"><div id="pager"></div></div>
+</section>
+</main>
+
+<footer id="site-footer" class="footer"></footer>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
