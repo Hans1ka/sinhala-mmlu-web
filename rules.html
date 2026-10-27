@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rules · Sinhala MMLU Shared Task</title>
+  <meta name="description" content="Participation rules for the Sinhala MMLU Shared Task: teams, the 8B parameter limit, models, data and reproducibility.">
+  <meta property="og:title" content="Rules · Sinhala MMLU Shared Task">
+  <meta property="og:description" content="Participation rules for the Sinhala MMLU Shared Task: teams, the 8B parameter limit, models, data and reproducibility.">
+  <meta property="og:type" content="website">
+  <!-- <meta name="theme-color" content="#f7f7f4" media="(prefers-color-scheme: light)"> -->
+  <!-- <meta name="theme-color" content="#101216" media="(prefers-color-scheme: dark)"> -->
+  <meta name="theme-color" content="#f7f7f4">
+  <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+  <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%234f46e5'/><text x='32' y='44' font-size='32' text-anchor='middle' fill='white' font-family='sans-serif'>සි</text></svg>"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="rules">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header" class="topbar"></header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Home</a><span>/</span><span>rules</span></div>
+    <h1>The <em>Rules</em></h1>
+    <p class="lead">By registering, every team member agrees to these rules.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <!-- <div class="actions" style="margin-top:0;margin-bottom:10px"><a class="btn btn-ghost" data-link="rulesPdf" href="#">Download full rules</a></div> -->
+    <div class="grid-2">
+      <article class="card rule reveal"><h3><span class="ix">01</span>Teams</h3><ul>
+        <li>Teams of 1 to 4 members. Individual participation is welcome.</li>
+        <li>A person may belong to <b>only one team</b>. Duplicate registrations lead to disqualification.</li>
+        <li>Each team names <b>one corresponding member</b> who handles all communication and holds the team's single Codabench account.</li>
+        <!-- <li>Team membership is frozen when the test phase opens (12 October).</li> -->
+        <li>People who have been given access to the full dataset, are not allowed to participate or advise teams.</li></ul></article>
+      <article class="card rule reveal"><h3><span class="ix">02</span>Model size: the 8B limit</h3><ul>
+        <li>The <b>total parameters of every component used at inference</b> must not exceed 8 billion.</li>
+        <li>This counts every neural component your system loads, not only the largest model, including ensemble members and any classifier or router.</li>
+        <li>Mixture-of-Experts models count <b>total</b> parameters, not active parameters.</li>
+        <li>LoRA and other adapters count in addition to their base model.</li>
+        <li>Quantisation does not reduce the parameter count.</li></ul></article>
+      <article class="card rule reveal"><h3><span class="ix">03</span>Models</h3><ul>
+        <li>Only <b>open-weight models released before 1 October 2026</b>.</li>
+        <li><b>No closed APIs</b> (e.g. GPT, Claude, Gemini) at inference time.</li></ul></article>
+      <article class="card rule reveal"><h3><span class="ix">04</span>Training data</h3><ul>
+        <li>Any publicly available data may be used for training.</li>
+        <li>Synthetic data generated with open models is permitted.</li>
+        <li>Closed APIs may be used <b>only to generate training data</b>, and this must be disclosed.</li>
+        <li><b>Training, tuning or prompt design on test questions</b> in any form is strictly prohibited.</li></ul></article>
+      <article class="card rule reveal"><h3><span class="ix">05</span>Inference</h3><ul>
+        <li>No internet access or live retrieval at inference.</li>
+        <li><b>No retrieval of any kind</b>, no RAG, knowledge bases, vector databases, search indexes, dictionaries, corpora or lookup tables, local or remote, neural or sparse (including BM25).</li>
+        <li>The full pipeline must run from submitted code with <b>no human in the loop</b>.</li></ul></article>
+      <article class="card rule reveal"><h3><span class="ix">06</span>Reproducibility</h3><ul>
+        <li>All teams in the final leaderboard share their code, scripts and a model manifest after the final leaderboard submission deadline.</li>
+        <li>Organisers re-run every final system. <b>Only reproduced runs are added to the final ranking</b> and eligible for prizes.</li>
+        <!-- <li>Re-runs may use a reformatted copy of the test inputs.</li> -->
+        <li>All teams must submit a system description report for final ranking.</li>
+        <li>System description reports must <b>cite the SinhalaMMLU dataset paper</b> (Pramodya et al., EMNLP 2025). The citation is on the <a href="task.html">Task</a> page.</li></ul></article>
+    </div>
+    <div class="callout reveal"><span class="mark">!</span><p><b>Integrity.</b> The organisers may disqualify any team, or revoke a prize after the event, for rule violations, including manual predictions, use of test answers from any source, multiple Codabench accounts, or undisclosed closed-API use. Committee decisions are final.</p></div>
+    <div id="pager"></div>
+  </div>
+</section>
+</main>
+
+<footer id="site-footer" class="footer"></footer>
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
